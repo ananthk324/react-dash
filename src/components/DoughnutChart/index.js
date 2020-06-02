@@ -25,7 +25,7 @@ export default function DoughnutChart() {
 
     return (
         <div>
-            ORDERS
+            <div className="doughnutchart-title">ORDERS</div>
             <Doughnut data={doughnut}
                 width={200} height={250}
                 options={{

@@ -18,11 +18,16 @@
     color: #555555;
     border-radius: 100%;
     border: 0;
+    outline: none;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.05), -2px -2px 3px 0 rgba(255, 255, 255, 0.89), 2px 2px 2px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
 }
 
 .controls>button:first-child {
     margin-bottom: 0.7em;
+}
+
+.controls>button:active {
+    background-color: #d1cccc;
 }
 
 .controls .fa {
