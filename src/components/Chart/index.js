@@ -6,7 +6,7 @@ import Dropdown from './Dropdown';
 function Chart() {
     const [chartData, setchartData] = useState({})
 
-    const chart = (canvas) => {
+    const chart = () => {
         setchartData({
             labels: ['Jan', 'Feb', 'March', 'April', 'May'],
             datasets: [
@@ -66,22 +66,33 @@ function Chart() {
                             boxWidth: 15,
                             fontSize: 15,
                             fontColor: 'black',
-                            fontFamily:'Quicksand-Medium',
+                            fontFamily:'Quicksand',
                             padding: 60
                         }
                     },
                     scales: {
                         xAxes: [{
                             gridLines: {
-                                display: false
+                                drawOnChartArea: false,
+                                lineWidth:2,
+                                drawTicks:false
+                                // display:true
+                            },
+                            ticks:{
+                                padding:10
                             }
                         }],
                         yAxes: [{
                             gridLines: {
-                                display: false
+                                // drawOnChartArea: false
+                                drawOnChartArea: false,
+                                lineWidth:2,
+                                drawTicks:false
                             },
                             ticks: {
-                                beginAtZero: true
+                                beginAtZero: true,
+                                min:0,
+                                padding: 10
                             }
                         }]
                     }

@@ -1,0 +1,49 @@
+.foodie-upcoming-orders-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.1em 1.1em 0.1em;
+    margin: 0.5em;
+}
+
+.foodie-upcoming-orders-container .breadcrumbs-container {
+    padding: 0.2em;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.foodie-upcoming-orders-container .breadcrumbs-container>div {
+    padding-right: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(58, 57, 57);
+}
+
+.foodie-upcoming-orders-container .breadcrumbs-container>div:hover {
+    cursor: pointer;
+}
+
+.foodie-upcoming-orders-container .breadcrumbs-container .fa {
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+.foodie-upcoming-orders-container .breadcrumbs-container>div:last-child {
+    color: #fe4f04;
+}
+
+.foodie-upcoming-orders-container .upcoming-orders-title {
+    padding: 1em 0.1em;
+    padding-left: 3em;
+    margin: 1.5em 0.2em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}

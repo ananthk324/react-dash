@@ -1,39 +1,86 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './SideNav.css';
+import Logo from '../../assets/logos';
 
 const SideNav = () => {
-    const logo = require('../../assets/logos/zymmo-logo.png');
+    const logo = Logo.logo;
 
     return (
-        <div className="sidenav">
+        <nav className="sidenav">
             <div className="zymmo-logo">
-                <img src={logo} alt="Zymmo Logo" />
-            </div>
-            <div className="nav-item active">
-                Home
-            </div>
-            <div className="nav-item">
-                Orders 
-            </div>
-            <div className="nav-item">
-                Chefs
+                <NavLink
+                    to="/home"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    <img src={logo} alt="Zymmo Logo" />
+                </NavLink>
             </div>
             <div className="nav-item">
-                Foodies
+                <NavLink
+                    to="/home"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Home
+                </NavLink>
             </div>
             <div className="nav-item">
-                Menus
+                <NavLink
+                    to="/orders"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Orders
+                </NavLink>
             </div>
             <div className="nav-item">
-                Dishes
+                <NavLink
+                    to="/chefs"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Chefs
+                </NavLink>
             </div>
             <div className="nav-item">
-                Financials
+                <NavLink
+                    to="/foodies"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Foodies
+                </NavLink>
             </div>
             <div className="nav-item">
-                Payouts to Chefs
+                <NavLink
+                    to="/menus"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Menus
+                </NavLink>
             </div>
-        </div>
+            <div className="nav-item">
+                <NavLink
+                    to="/dishes"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Dishes
+                </NavLink>
+            </div>
+            <div className="nav-item">
+                <NavLink
+                    to="/financials"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Financials
+                </NavLink>
+            </div>
+            <div className="nav-item">
+                <NavLink
+                    to="/payouts"
+                    className="nav-link"
+                    activeClassName="nav-link--active">  
+                    Payouts to Chefs
+                </NavLink>
+            </div>
+        </nav>
     );
 }
 

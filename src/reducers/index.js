@@ -5,14 +5,16 @@ const Reducer = (state, action) => {
             return {
                 ...state,
                 isAuthenticated: true,
-                email: action.payload
+                email: action.payload,
+                token: action.token
             };
 
         case "LOGOUT":
             return {
                 ...state,
                 isAuthenticated: false,
-                email: ""
+                email: "",
+                token: ""
             };
 
         default:

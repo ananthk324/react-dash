@@ -1,14 +1,15 @@
 import React, { createContext, useReducer } from 'react';
-import Routes from './routes/Routes';
 import RoutesForNoAuth from './routes/RoutesForNoAuth';
 import Reducer from './reducers';
+import Dashboard from './pages/Dashboard';
 
 // Context for Authentication values
 export const AuthContext = createContext();
 
 const initialState = {
     isAuthenticated: null,
-    email: ""
+    email: "",
+    token: ""
 };
 
 const App = () => {
@@ -24,10 +25,10 @@ const App = () => {
             <div className="App">
                 {!state.isAuthenticated ?           
                 <RoutesForNoAuth /> :
-                <Routes /> }
+                <Dashboard /> }
 
-                {/* Route only for development. Uncomment this Route */}
-                <Routes />
+                {/* Remove this dashboard component when authentication is ready */}
+                <Dashboard />
             </div>
         </AuthContext.Provider>
     );

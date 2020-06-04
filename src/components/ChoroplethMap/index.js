@@ -24,6 +24,7 @@ const ChoroplethMap = () => {
           setData(response.data);
         }
         getData();
+        return;
     }, []);
 
     const onZoomIn = () => {

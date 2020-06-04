@@ -1,0 +1,74 @@
+.table-container {
+    margin: 0.5em;
+    padding: 1em 0em;
+    background-color: #ffffff;
+}
+
+.table-container .table {
+    display: table;
+    text-align: left;
+}
+
+.table-container .table-header-item {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: #313030;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 0.6px solid #dfdbdb;
+}
+
+.table-container tr th:first-child,
+.table-container tr td:first-child {
+    padding-left: 50px;
+    width: 220px;
+}
+
+.table-container tr th:nth-child(2),
+.table-container tr td:nth-child(2) {
+    width: 240px;
+}
+
+.table-container tr td:nth-child(3),
+.table-container tr th:nth-child(3),
+.table-container tr td:nth-child(4),
+.table-container tr th:nth-child(4),
+.table-container tr th:last-child,
+.table-container tr td:last-child {
+    width: 150px;
+}
+
+.table-container .table-data-cell {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #313030;
+    padding: 1em 0em;
+}
+
+.table-container .cell-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.table-container .cell-container>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container .cell-data-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    margin-right: 1em;
+}
+
+.table-container .cell-data-username {
+    color: #a3a3a3;
+}
+
+.table-container .table-data-cell .cell-data-status.highlight {
+    color: #ec3d3d;
+}

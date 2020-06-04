@@ -1,0 +1,32 @@
+.search-box {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 25px;
+    padding: 5px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+}
+
+.search-box input {
+    border: none;
+    width: 240px;
+    height: 18px;
+    background-color: #ebebeb;
+    color: rgb(85, 85, 85);
+    outline: none;
+}
+
+.search-box input:placeholder-shown {
+    font-size: 11px;
+    color: rgb(85, 85, 85);
+}
+
+.search-box .fa.fa-search {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    pointer-events: none;
+    color: rgb(161, 161, 161);
+}

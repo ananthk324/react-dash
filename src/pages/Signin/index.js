@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import './Signin.css';
+import Logo from '../../assets/logos';
 
 const Signin = () => {
 
-    const logo = require('../../assets/logos/zymmo-logo-text.png');
+    const logo = Logo.logo_text;
 
     const [signinData, setSigninData] = useState({
         email: "",

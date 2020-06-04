@@ -1,0 +1,135 @@
+.menu_dish_image {
+  width: 130px;
+  height: 130px;
+  padding: .5%;
+}
+
+.title {
+  font-family: 'Quicksand';
+  padding-bottom: 40px;
+  margin-left: 4px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 1.5em;
+  align-items: center;
+  display: flex;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: rgb(85, 85, 85);
+  border-radius: 100%;
+  display: inline-block;
+}
+.Chefpage{
+  margin: 50px 70px;
+}
+.Breadcrumb{
+  height: 16px;
+  width: 88px;
+  color: #313030;
+  font-family: 'Quicksand';
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.Chefcontainer {
+  padding: 46px 50px;
+  margin: 100px 0px;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.055), -5px -5px 2px 0 rgba(255, 255, 255, 0.712);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.overImage{
+  width: 0;
+}
+.menuName {
+  position: relative;
+  top: -45px;
+  left: -130px;
+
+  height: 16px;
+  width: 98px;
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  
+  color: #FFFFFF;
+  font-family: 'Quicksand';
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.overImage_bottom{
+  position: relative;
+  top: 43px;
+  left: -40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ingredientIcon {
+  position: relative;
+  height: 9.82px;
+  width: 13.59px;
+}
+
+.ingredientCount{
+  position: relative;
+  padding: 5px;
+  color: #FFFFFF;
+  font-family: 'Quicksand';
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+/*
+.column {
+    flex: 10%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */

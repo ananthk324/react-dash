@@ -10,11 +10,29 @@
     justify-content: left;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.123), -3px -3px 2px 0 rgb(255, 255, 255);
 } */
-
+.doughnutchart{
+    position: relative;
+    text-align: center;
+}
 .doughnutchart-title {
     font-weight: 500;
     letter-spacing: 1.5px;
     font-size: 15px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.doughtnut-center{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 110px;
+    left: 89px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
     color: rgb(85, 85, 85);
     margin-bottom: 1.5em;
 }

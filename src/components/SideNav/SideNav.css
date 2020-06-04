@@ -6,8 +6,8 @@
 }
 
 .sidenav>div {
-    margin: 0.9em 0.5em 0.9em 1em;
-    padding: 0.5em;
+    margin: 1em 0.5em 1em 1em;
+    padding: 0.1em;
 }
 
 .zymmo-logo {
@@ -27,14 +27,21 @@
 .nav-item {
     font-size: small;
     font-weight: 500;
-    color: rgb(161, 161, 161);
+    color: rgb(148, 148, 148);
 }
 
-.nav-item:hover {
-    cursor: pointer;
+.sidenav .nav-item a {
+    text-decoration: none;
+    display: block;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    color: rgb(148, 148, 148);
 }
 
-.nav-item.active {
-    font-size: small;
+.sidenav .nav-item .nav-link:hover {
+    color: rgb(66, 66, 66);
+}
+
+.sidenav .nav-item .nav-link--active {
     color: rgb(41, 41, 41);
 }
