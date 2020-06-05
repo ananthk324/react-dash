@@ -1,0 +1,41 @@
+.dataBox{
+    height: 235px;
+    width: 185px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    padding: 40px 32px,74px 32px;
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.05), 
+    -4px -4px 6px 0 rgba(255,255,255,0.89), 
+    2px 2px 4px 0 rgba(0,0,0,0.05), 
+    -2px -2px 4px 0 rgba(255,255,255,0.89);  
+}
+
+.round{
+    border-radius: 50%;
+    border: 10px solid  #FE5206;
+    padding: 1px;
+    height: 121px;
+    width: 121px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    
+}
+.dataName{
+    height: 20px;
+  color: #313030;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: 45px;
+  text-align: center;
+}
+.data{
+    
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #313030;
+    line-height: 55px;
+}

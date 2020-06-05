@@ -64,24 +64,18 @@
 }
 .menuName {
   position: relative;
-  top: -45px;
-  left: -130px;
+  top: -40px;
+  left: -135px;
 
   height: 16px;
+  display: inline-block;
   width: 98px;
   color: #FFFFFF;
-  font-family: Quicksand;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 16px;
-  
-  color: #FFFFFF;
-  font-family: 'Quicksand';
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 16px;
+  font-family: 'Quicksand';
 }
 
 .overImage_bottom{

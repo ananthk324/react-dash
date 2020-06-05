@@ -5,15 +5,19 @@ import DoughnutChart from '../../components/DoughnutChart';
 import data from '../../constants/ordersSampleData';
 import columns from '../../constants/columnsForTableOrders';
 import Images from '../../assets/icons';
+import { Link } from 'react-router-dom';
 
 const ViewFoodieProfile = () => {
     return (
         <div className="foodie-profile-container">
+
             <div className="breadcrumbs-container">
                 <div>Manage Foodies<i className="fa fa-angle-right"></i></div>
                 <div>Marion Rogers</div>
             </div>
+
             <div className="foodie-details-section">
+
                 <div className="foodie-details">
                     <div className="profile-picture">
                         <img className="foodie-picture" src={Images.user1} />
@@ -45,10 +49,12 @@ const ViewFoodieProfile = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="orders-doughnutchart">
                         <DoughnutChart />
                 </div>
             </div>
+
             <div className="table-selector-header">
                 <div>
                     <select className="table-selector">
@@ -56,8 +62,13 @@ const ViewFoodieProfile = () => {
                         <option>UPCOMING ORDERS</option>
                     </select>
                 </div>
-                <div className="table-view-all">View all</div>
+                <div className="table-view-all">
+                    <Link to="/foodies/orders/previous">
+                        View all
+                    </Link>
+                </div>
             </div>
+            
             <div className="table-section">
                 <Table columns={columns} data={data} />
             </div>

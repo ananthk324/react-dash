@@ -9,7 +9,7 @@ const RoutesNoAuth = () => {
 */
     return (
         <Switch>
-            <Route exact path="/signin" component={ Signin } />
+           <Route exact path="/signin" component={ Signin } />
         </Switch> 
     );
 }

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.chefAbout{
+  margin-top: 20px;
+}
+.profileName{
+  color: #FE4F04;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 2px;
+
+}
+.pageName{
+  margin-left: 20px;
+  margin-right: 2px;
+  color: #313030;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.About{
+  margin-left: 10px;
+  padding-bottom: 15px;;
+  margin-top: 35px;
+  height: 809px;
+  width: 325px;
+  border-radius: 6px;
+  background-color: #F5F5F5;
+  box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.05), -4px -4px 6px 0 rgba(255,255,255,0.89), 2px 2px 4px 0 rgba(0,0,0,0.05), -2px -2px 4px 0 rgba(255,255,255,0.89);
+}
+
+.profileImage{
+  border-radius: 50%;
+  width: 153px;
+  height: 153px;
+  margin-top: 40px;
+  margin-left: 25%;
+}
+
+.chefName{
+  margin-left: 15%;
+  margin-bottom: auto;
+  color: #313030;
+  font-family: 'Quicksand';
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+
+.chefId{
+  display: flex;
+  height: 16px;
+  width: 60px;
+  color: #313030;
+  font-family: 'Quicksand';
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.chefJoinedOn{
+  margin-left: 25%;
+  margin-top: 20px;
+  color: #A3A3A3;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.blockButton{
+  margin: 25px 35%;
+  color: #EC3D3D;
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0;
+  line-height: 16px;
+  height: 30px;
+  width: 90px;
+  border-radius: 21px;
+  background-color: #F5F5F5;
+  box-shadow: 4px 4px 6px 0 rgba(0,0,0,0.05), 
+    -4px -4px 6px 0 rgba(255,255,255,0.89), 
+    2px 2px 4px 0 rgba(0,0,0,0.05), 
+    -2px -2px 4px 0 rgba(255,255,255,0.89);  
+}
+
+.borderLine{
+  box-sizing: border-box;
+  height: 1px;
+  width: 267.72px;
+  border: 1px solid #CCCCCC;
+  opacity: 0.29;
+}
+
+.chefLocation{
+  color: #313030;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.contactDetails{
+  margin-top: 40px;
+  color: #313030;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.zymmoTags{
+  margin-left: 25px;
+  margin-top: 40px;
+  color: #095D31;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.tagLine{
+  margin-left: 25px;
+  margin-top: 40px;
+  color: #313030;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+}

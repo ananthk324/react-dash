@@ -1,0 +1,90 @@
+.table-sortable-container {
+    margin: 0.5em;
+    padding: 1.5em 0em;
+    background-color: #f5f5f5;
+}
+
+.table-sortable-container .table {
+    display: table;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-sortable-container .table-header-item {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: #313030;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
+
+.table-sortable-container tr {
+    border-bottom: 0.4px solid #e2e2e2;
+}
+
+.table-sortable-container thead tr {
+    border-bottom: none;
+}
+
+.table-sortable-container tr th:first-child,
+.table-sortable-container tr td:first-child {
+    width: 200px;
+}
+
+.table-sortable-container tr th:nth-child(2),
+.table-sortable-container tr td:nth-child(2) {
+    width: 180px;
+}
+
+
+/*
+.table-sortable-container tr td,
+.table-sortable-container tr th {
+    width: 150px;
+} */
+
+.table-sortable-container .table-data-cell {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #313030;
+    padding: 1em 0em;
+}
+
+.table-sortable-container .cell-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.table-sortable-container .cell-container>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-sortable-container .cell-data-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    margin-right: 1em;
+}
+
+.table-sortable-container .cell-data-username {
+    color: #a3a3a3;
+}
+
+.table-sortable-container .table-data-cell .cell-data-status.highlight {
+    color: #ec3d3d;
+}
+
+.table-sortable-container .table .cell-data.red {
+    color: #ec3d3d;
+}
+
+.table-sortable-container .table .cell-data.green {
+    color: #49ad5f;
+}

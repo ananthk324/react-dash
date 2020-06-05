@@ -1,0 +1,24 @@
+.manage-dishes-container table tr th:nth-child(1),
+.manage-dishes-container table tr td:nth-child(1) {
+    width: 250px;
+}
+
+.manage-dishes-container table tr th:nth-child(2),
+.manage-dishes-container table tr td:nth-child(2) {
+    width: 200px;
+}
+
+.manage-dishes-container table tr th:nth-child(3),
+.manage-dishes-container table tr td:nth-child(3) {
+    width: 200px;
+}
+
+.manage-dishes-container table tr th:nth-child(4),
+.manage-dishes-container table tr td:nth-child(4) {
+    width: 200px;
+}
+
+.manage-dishes-container table tr th:nth-child(5),
+.manage-dishes-container table tr td:nth-child(5) {
+    text-align: right;
+}

@@ -1,0 +1,55 @@
+.chef-transactions-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.1em 1.1em 0.1em;
+    margin: 0.5em;
+}
+
+.chef-transactions-container .breadcrumbs-container {
+    padding: 0.2em;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.chef-transactions-container .breadcrumbs-container>div {
+    padding-right: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(58, 57, 57);
+}
+
+.chef-transactions-container .breadcrumbs-container>div:hover {
+    cursor: pointer;
+}
+
+.chef-transactions-container .breadcrumbs-container .fa {
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+.chef-transactions-container .breadcrumbs-container>div:last-child {
+    color: #fe4f04;
+}
+
+.chef-transactions-container .transactions-title {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 2em 1em 3em;
+    margin: 1.5em 0.2em;
+}
+
+.transactions-title>div {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}

@@ -16,5 +16,7 @@ export default {
     sort: require('./sort.png'),
     bars: require('./bars.png'),
     bars_red: require('./bars-red.png'),
+    excel: require('./excel.png'),
+    ingredients_icon: require('./ingredients_icon.png')
 };
   

@@ -1,0 +1,58 @@
+.headerf-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 1em 0.1em 1.1em 0.1em;
+    margin: 0.5em;
+    border-bottom: 0.6px solid #dfdbdb;
+}
+
+.headerf-container>div {
+    margin: auto;
+    padding: 0.5em;
+}
+
+.headerf-container .headerf-title {
+    flex: 3.5;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.headerf-container .headerf-title a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+.headerf-container .headerf-title>div {
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.headerf-container .dropdown-bars {
+    margin-left: 1em;
+}
+
+.headerf-container .dropdown-bars:hover {
+    cursor: pointer;
+}
+
+.headerf-container .headerf-title .fa {
+    color: rgb(85, 85, 85);
+    font-size: 4px;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.headerf-container .dropdown-bars img {
+    width: 18px;
+    height: 16px;
+}

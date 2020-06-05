@@ -12,12 +12,10 @@
 
 .databar-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 1.2em 0.8em;
-    margin: 0.5em 0.2em;
+    padding: 1.2em 0em;
+    margin: 0.5em 0em;
     margin-top: 1.5em;
     border-radius: 6px;
     background-color: #F5F5F5;
@@ -29,7 +27,6 @@
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
-    margin: auto;
     padding: 0.6em 0.2em;
     width: 162px;
     height: 48px;

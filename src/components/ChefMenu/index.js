@@ -1,46 +1,44 @@
 import React, { useState } from 'react';
 import './ChefMenu.css';
-import food from '../../assets/food.jpg';
-import ingredient_icon from '../../assets/menu_overImage_icon.png';
-import ManageChef_menu from '../../pages/ManageChef_menu';
+import Images from '../../assets/icons';
 
 export default function ChefMenu({title}) {
 
     const [menuDetails, setmenuDetails] = useState([{
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 10
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 12
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 10
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 5
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 10
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 7
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 10
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 8
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 10
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 10
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 11
     }, {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 10
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Thai Menu", image_url: Images.dish5, ingre_count: 9
     },
     {
-        name: "Noodles", image_url: food, ingre_count: 10
+        name: "Dessert Menu", image_url: Images.dish5, ingre_count: 11
     }])
     return (
         <div className='Chefpage'>
@@ -52,9 +50,9 @@ export default function ChefMenu({title}) {
                         <>
                             <img className='menu_dish_image' src={menuDetails.image_url} alt="hello"></img>
                             <div className='overImage'>
-                                <span className='menuName'>{menuDetails.name}</span>
-                                <div className='overImage_bottom'>
-                                    <img className='ingredientIcon' src={ingredient_icon}></img>
+                                <span className='menuName' style={title==="Menu"?{}:{top:"-53px"}}>{menuDetails.name}</span>
+                                <div className='overImage_bottom' style={title==="Menu"?{}:{display:'none'}}>
+                                    <img className='ingredientIcon' src={Images.ingredients_icon}></img>
                                     <span className='ingredientCount'>{menuDetails.ingre_count} </span>
                                 </div>
                             </div>

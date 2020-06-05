@@ -1,0 +1,19 @@
+.manage-chefs-container table tr th:nth-child(2),
+.manage-chefs-container table tr td:nth-child(2) {
+    width: 140px;
+}
+
+.manage-chefs-container table tr th:nth-child(3),
+.manage-chefs-container table tr td:nth-child(3) {
+    width: 180px;
+}
+
+.manage-chefs-container table tr th:nth-child(4),
+.manage-chefs-container table tr td:nth-child(4) {
+    width: 240px;
+}
+
+.manage-chefs-container table tr th:nth-child(5),
+.manage-chefs-container table tr td:nth-child(5) {
+    width: 150px;
+}

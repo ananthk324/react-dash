@@ -1,11 +1,11 @@
-.foodie-profile-container {
+.menu-profile-container {
     display: flex;
     flex-direction: column;
     padding: 1em 0.1em 1.1em 0.1em;
     margin: 0.5em;
 }
 
-.foodie-profile-container .breadcrumbs-container {
+.menu-profile-container .breadcrumbs-container {
     padding: 0.2em;
     margin-top: 0.5em;
     margin-left: 0.2em;
@@ -14,38 +14,38 @@
     flex-direction: row;
 }
 
-.foodie-profile-container .breadcrumbs-container>div {
+.menu-profile-container .breadcrumbs-container>div {
     padding-right: 7px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
     color: rgb(58, 57, 57);
 }
 
-.foodie-profile-container .breadcrumbs-container>div:hover {
+.menu-profile-container .breadcrumbs-container>div:hover {
     cursor: pointer;
 }
 
-.foodie-profile-container .breadcrumbs-container .fa {
+.menu-profile-container .breadcrumbs-container .fa {
     padding-left: 7px;
     padding-top: 3px;
 }
 
-.foodie-profile-container .breadcrumbs-container>div:last-child {
+.menu-profile-container .breadcrumbs-container>div:last-child {
     color: #fe4f04;
 }
 
-.foodie-profile-container .foodie-details-section {
+.menu-profile-container .menu-details-section {
     display: flex;
     margin: 0.5em;
     margin-top: 1.5em;
     padding: 1em 0.1em;
 }
 
-.foodie-profile-container .foodie-details {
+.menu-profile-container .menu-details {
     flex: 2.8;
     display: flex;
     margin: 0.1em 1em 0.1em 0.1em;
@@ -56,85 +56,82 @@
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
 }
 
-.foodie-profile-container .orders-doughnutchart {
-    flex: 1;
+.menu-profile-container .orders-databox {
+    flex: .2;
     display: flex;
     flex-direction: column;
     padding: 1.5em;
-    margin: 0.2em;
-    border-radius: 4px;
-    background-color: #F5F5F5;
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
+    /* margin: 0.2em; */
 }
 
-.foodie-details>div {
+.menu-details>div {
     display: flex;
     flex-direction: column;
 }
 
-.foodie-details .profile-picture {
-    flex: 1.2;
+.menu-details .profile-picture {
+    flex: 1;
     justify-items: center;
     align-items: center;
     padding-right: 2em;
-    border-right: 0.4px solid #a19c9ca1;
+    /* border-right: 0.4px solid #CCCCCC; */
+    border-right: 1px solid rgba(204, 204, 204, 0.29);
 }
 
-.foodie-details .profile-picture>div {
+.menu-details .profile-picture>div {
     margin-bottom: 0.7em;
 }
 
-.foodie-details .profile-details {
-    flex: 2;
+.menu-details .profile-details {
+    flex: 1;
     justify-items: center;
     align-items: left;
 }
 
-.foodie-details .foodie-picture {
+.menu-details .menu-picture {
     height: 150px;
     width: 150px;
-    border-radius: 100%;
     margin-bottom: 0.8em;
 }
 
-.foodie-details .foodie-name {
-    font-size: 20px;
+.menu-details .menu-name {
+    font-size: 25px;
     font-weight: 500;
     color: #313030;
 }
 
-.foodie-details .foodie-row {
+.menu-details .menu-row {
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
 }
 
-.foodie-row .fa {
+.menu-row .fa {
     font-size: 4px;
     color: #313030;
     padding-right: 4px;
 }
 
-.foodie-details .foodie-username {
+.menu-details .menu-username {
     font-size: 12px;
     font-weight: 500;
     color: #313030;
     padding-right: 4px;
 }
 
-.foodie-details .foodie-icon {
+.menu-details .foodie-icon {
     width: 10px;
     height: 10px;
 }
 
-.foodie-details .joined-on {
-    font-size: 11px;
+.menu-details .added-on {
+    font-size: 12px;
     font-weight: 500;
     color: #a3a3a3;
 }
 
-.foodie-details .block-button {
+.menu-details .block-button {
     height: 30px;
     width: 90px;
     margin-top: 1em;
@@ -151,11 +148,11 @@
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
 }
 
-.foodie-details .block-button:active {
+.menu-details .block-button:active {
     background-color: #c79e9e;
 }
 
-.foodie-details .profile-details {
+.menu-details .profile-details {
     padding-left: 1.5em;
     padding-right: 1em;
     margin-left: 1.5em;
@@ -173,17 +170,44 @@
     margin-bottom: 0.2em;
 }
 
-.profile-details .foodie-contact>div {
-    font-size: 13px;
+.profile-details .chef-contact>div {
+    font-size: 15px;
     font-weight: 500;
     color: #444343;
     margin-bottom: 0.5em;
 }
 
-.profile-details .foodie-contact>div i {
+.chef-contact .profile-name .fa {
+    font-size: 4px;
+    font-weight: 500;
+    color: #313030;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.chef-contact .profile-name .profile-username {
+    display: flex;
+    align-items: center;
+}
+
+.profile-details .chef-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-details .chef-contact .profile-name {
+    padding-left: 3%;
+}
+
+.profile-details .chef-contact>div i {
     font-size: 12px;
     color: #444343;
     padding-right: 10px;
+}
+
+.profile-details .chef-contact .profile-pic {
+    height: 36px;
+    width: 36px;
 }
 
 .profile-details .fa-map-marker {
@@ -191,7 +215,7 @@
 }
 
 .profile-details .zymmo-tags>div {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: #095d31;
     margin-bottom: 0.5em;
@@ -211,7 +235,7 @@
     margin-bottom: 1em;
 }
 
-.foodie-profile-container .table-selector-header {
+.menu-profile-container .table-selector-header {
     display: flex;
     justify-content: space-between;
     justify-items: center;
@@ -243,11 +267,32 @@
     letter-spacing: 1px;
 }
 
-.table-selector-header .table-view-all a {
-    color: #494949;
-    text-decoration: none;
-}
-
 .table-selector-header .table-view-all:hover {
     cursor: pointer;
+}
+
+.table-selector-header .fa {
+    font-size: 4px;
+    font-weight: 500;
+    color: #313030;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.table-selector-header .table-title {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 214px;
+    color: #313030;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2.8px;
+    line-height: 20px;
+}
+
+.table-section table th:nth-child(1),
+.table-section table td:nth-child(1) {
+    width: 240px;
 }
