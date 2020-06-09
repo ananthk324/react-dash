@@ -22,6 +22,13 @@
     padding-bottom: 1.5em;
 }
 
+.table-sortable-container .table-header-item .fa {
+    font-size: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    opacity: 0.6;
+}
+
 .table-sortable-container tr {
     border-bottom: 0.4px solid #e2e2e2;
 }
@@ -53,6 +60,14 @@
     letter-spacing: 0;
     color: #313030;
     padding: 1em 0em;
+}
+
+.table-sortable-container tr .table-header-item:first-child {
+    padding-left: 0.8em;
+}
+
+.table-sortable-container tr .table-data-cell:first-child {
+    padding-left: 0.5em;
 }
 
 .table-sortable-container .cell-container {
@@ -87,4 +102,58 @@
 
 .table-sortable-container .table .cell-data.green {
     color: #49ad5f;
+}
+
+.table-sortable-container .table .row-type.red {
+    opacity: 0.5;
+    background-color: #F67280;
+}
+
+.table-sortable-container .table .row-type.grey {
+    opacity: 0.5;
+    background-color: #CCCCCC;
+}
+
+.table-sortable-container .row-type.grey .cell-data-username,
+.table-sortable-container .row-type.red .cell-data-username {
+    color: #313030;
+}
+
+.table-sortable-container .zymmo-tags-cell,
+.table-sortable-container .allergens-cell {
+    display: flex;
+}
+
+.table-sortable-container .zymmo-tags-cell>div,
+.table-sortable-container .allergens-cell>div {
+    margin-right: 0.2em;
+}
+
+.table-sortable-container .pagination-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.pagination-row div:first-child {
+    margin-right: 22em;
+}
+
+.pagination-row .pagination-btn {
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    font-size: 11px;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+}
+
+.pagination-row .pagination-btn.current {
+    background-color: rgba(254, 79, 4, 0.1);
+    color: #fe4f04;
 }

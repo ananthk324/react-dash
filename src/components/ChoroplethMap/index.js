@@ -20,7 +20,6 @@ const ChoroplethMap = () => {
     useEffect(() => {
         const getData = async () => {
           let response = await axios.get('https://covidtracking.com/api/v1/states/current.json');
-          console.log(response.data);
           setData(response.data);
         }
         getData();
@@ -39,11 +38,34 @@ const ChoroplethMap = () => {
         setZoom((zoom/2));
     }
 
-    const onMouseEnter = (geo, current = { positive: null, recovered: null }) => {
+    const onMouseEnter = (geo, current = { 
+      positive: null, 
+      recovered: null, 
+      positiveIncrease: null,
+      negativeIncrease: null 
+    }) => {
+        const stateName = geo.properties.name.toUpperCase();
         return () => {
-          setTooltipContent(`${geo.properties.name} 
-            <br/> Total No of Foodie: ${current.positive ? current.positive : 'NA'}
-            <br/> Total No of Chef: ${current.recovered ? current.recovered : 'NA'}`);
+          setTooltipContent(`
+            <div class="state-distribution">
+                <div class="state-title">${stateName}</div>
+                <div class="state-data">
+                    <div class="state-text-content">Total No of Chef</div>
+                    <div class="state-value-content">${current.positiveIncrease ? current.positiveIncrease : 'NA'}</div>
+                </div>
+                <div class="state-data">
+                    <div class="state-text-content">Total No of Foodie</div>
+                    <div class="state-value-content">${current.positive ? current.positive : 'NA'}</div>
+                </div>
+                <div class="state-data">
+                    <div class="state-text-content">Total No of Menu</div>
+                    <div class="state-value-content">${current.negativeIncrease ? current.negativeIncrease : 'NA'}</div>
+                </div>
+                <div class="state-data">
+                    <div class="state-text-content">Total No of Dish</div>
+                    <div class="state-value-content">${current.recovered ? current.recovered : 'NA'}</div>
+                </div>
+            </div>`);
         }
     }
 
@@ -58,7 +80,12 @@ const ChoroplethMap = () => {
 
     return (
       <>
-          <ReactTooltip type="light" multiline={true} html={true}>
+          <ReactTooltip className="map-tooltip" 
+                        arrowColor="transparent" 
+                        type="light" 
+                        multiline={true} 
+                        html={true}
+                        place="bottom">
               {tooltipContent}
           </ReactTooltip>
           <ComposableMap

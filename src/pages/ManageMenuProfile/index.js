@@ -2,8 +2,8 @@ import React from 'react'
 import './ManageMenuProfile.css'
 import Images from '../../assets/icons';
 import data from '../../constants/dishesSampleData';
-import columns from '../../constants/columnsForTableDishes';
-import Table from '../../components/Table';
+import columns from './columnsForTableDishes';
+import TableSortable from '../../components/TableSortable';
 import DataBox from '../../components/DataBox';
 
 
@@ -65,7 +65,7 @@ function ManageMenuProfile() {
                 </div>
             </div>
             <div className="table-section">
-                <Table columns={columns} data={data} />
+                <TableSortable columns={columns} data={data} />
             </div>
         </div>
     )

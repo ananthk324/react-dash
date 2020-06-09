@@ -4,8 +4,9 @@ import Images from '../../../assets/icons';
 import Searchbox from  '../Searchbox'
 import AdminDropdownMenu from '../AdminDropdownMenu';
 import { Link } from 'react-router-dom';
+import Dropdown from '../../Dropdown';
 
-const HeaderWithFilter = ({ title, value, path }) => {
+const HeaderWithFilter = ({ title, value, path="/" }) => {
     return (
         <div className="headerf-container">
             <div className="headerf-title">
@@ -16,9 +17,10 @@ const HeaderWithFilter = ({ title, value, path }) => {
                 <div>{value}</div>
             </div>
             <Searchbox />
-            <div className="dropdown-bars">
+            <button className="dropdown-bars">
                 <img src={Images.bars_red} />
-            </div>
+                <Dropdown />
+            </button>
             <AdminDropdownMenu />
         </div>
     )

@@ -3,13 +3,13 @@ import './Header.css';
 import Searchbox from './Searchbox';
 import AdminDropdownMenu from './AdminDropdownMenu';
 
-const Header = () => {
+const Header = ({ title = "HOME", isSearchBox = true }) => {
     return (
         <div className="header-container">
             <div className="header-title">
-                HOME
+                {title}
             </div>
-            <Searchbox />
+            { isSearchBox && <Searchbox /> }
             <AdminDropdownMenu />
         </div>
     )

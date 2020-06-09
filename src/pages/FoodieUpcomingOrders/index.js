@@ -1,8 +1,8 @@
 import React from 'react';
 import './FoodieUpcomingOrders.css';
-import Table from '../../components/Table';
+import TableSortable from '../../components/TableSortable';
 import data from '../../constants/ordersSampleData';
-import columns from '../../constants/columnsForTableOrders';
+import columns from './columnsForTableOrders';
 
 const FoodieUpcomingOrders = () => {
     return (
@@ -13,7 +13,7 @@ const FoodieUpcomingOrders = () => {
                 <div>Upcoming Orders</div>
             </div>
             <div className="upcoming-orders-title">UPCOMING ORDERS</div>
-            <Table columns={columns} data={data} />
+            <TableSortable columns={columns} data={data} />
         </div>
     );
 }

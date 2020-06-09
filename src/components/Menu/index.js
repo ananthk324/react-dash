@@ -15,7 +15,7 @@ function Menu({ dishes }) {
                     <button className="viewAllButton">
                     <Link to="/chefs/menu">
                             View all
-                        </Link></button>
+                    </Link></button>
                 </div>
                 <div className="dishes">
                     {dishes.slice(0, 14).map((dish) => (

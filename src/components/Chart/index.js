@@ -45,7 +45,7 @@ function Chart() {
             ]
         })
     }
-    
+
 
     useEffect(() => {
         chart()
@@ -58,6 +58,13 @@ function Chart() {
             </div>
             <Line data={chartData}
                 options={{
+                    tooltips: {
+                        mode:'nearest',
+                        backgroundColor: '#f7f7f7',
+                        bodyFontColor:'#000000',
+                        titleFontColor:'#000000',
+                        cornerRadius: 4,
+                      } ,
                     legend: {
                         display: true,
                         position: 'bottom',
@@ -66,7 +73,7 @@ function Chart() {
                             boxWidth: 15,
                             fontSize: 15,
                             fontColor: 'black',
-                            fontFamily:'Quicksand',
+                            fontFamily: 'Quicksand',
                             padding: 60
                         }
                     },
@@ -74,24 +81,24 @@ function Chart() {
                         xAxes: [{
                             gridLines: {
                                 drawOnChartArea: false,
-                                lineWidth:2,
-                                drawTicks:false
+                                lineWidth: 2,
+                                drawTicks: false
                                 // display:true
                             },
-                            ticks:{
-                                padding:10
+                            ticks: {
+                                padding: 10
                             }
                         }],
                         yAxes: [{
                             gridLines: {
                                 // drawOnChartArea: false
                                 drawOnChartArea: false,
-                                lineWidth:2,
-                                drawTicks:false
+                                lineWidth: 2,
+                                drawTicks: false
                             },
                             ticks: {
                                 beginAtZero: true,
-                                min:0,
+                                min: 0,
                                 padding: 10
                             }
                         }]

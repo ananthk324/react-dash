@@ -5,7 +5,7 @@ import locationIcon from '../../assets/icons/location.png';
 import { FiPhone } from 'react-icons/fi';
 import './ChefAbout.css';
 
-function chefAbout({ personalDetails }) {
+function chefAbout({ personalDetails, updatePersonalDetails }) {
 
     return (
         <div className="chefAbout">
@@ -22,7 +22,7 @@ function chefAbout({ personalDetails }) {
                         </span>
                     </div>
                     <p className="chefJoinedOn">{personalDetails.joinedOn}</p>
-                    <button className="blockButton">Block</button>
+                    <button className="blockButton" onClick = {updatePersonalDetails}>{personalDetails.blockedStatus? 'Unblock': 'Block'}</button>
                     <hr className="borderLine"></hr>
                     <div className="contactDetails">
                         <span style={{ display: "flex", margin: "20px" }}>

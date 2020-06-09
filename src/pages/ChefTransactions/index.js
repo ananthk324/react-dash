@@ -1,8 +1,8 @@
 import React from 'react';
 import './ChefTransactions.css';
-import Table from '../../components/Table';
+import TableSortable from '../../components/TableSortable';
 import data from '../../constants/ordersSampleData';
-import columns from '../../constants/columnDataTransactions';
+import columns from './columnsForChefTransactions';
 import ExportExcelButton from '../../components/ExportExcelButton';
 
 const ChefTransactions = () => {
@@ -17,7 +17,7 @@ const ChefTransactions = () => {
               <div>TRANSACTIONS</div>
               <ExportExcelButton />
           </div>
-          <Table columns={columns} data={data} />
+          <TableSortable columns={columns} data={data} />
         </div>
     );
 }

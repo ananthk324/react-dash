@@ -1,0 +1,38 @@
+.financials-container .databar-container .data-rectangle {
+    width: 270px;
+    height: 65px;
+}
+
+.financials-container .databar-container {
+    margin-top: 0;
+}
+
+.financials-container table tr th:nth-child(1),
+.financials-container table tr td:nth-child(1) {
+    width: 150px;
+}
+
+.financials-container table tr th:nth-child(2),
+.financials-container table tr td:nth-child(2) {
+    width: 200px;
+}
+
+.financials-container table tr th:nth-child(3),
+.financials-container table tr td:nth-child(3) {
+    width: 200px;
+}
+
+.financials-container table tr th:nth-child(4),
+.financials-container table tr td:nth-child(4) {
+    width: 150px;
+}
+
+.financials-container table tr th:nth-child(5),
+.financials-container table tr td:nth-child(5) {
+    width: 150px;
+}
+
+.financials-container table tr th:nth-child(6),
+.financials-container table tr td:nth-child(6) {
+    width: 150px;
+}

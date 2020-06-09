@@ -173,16 +173,22 @@
     color: #313030;
     font-size: 13px;
     font-weight: 500;
+    margin-bottom: 2.5em;
 }
 
 .dish-details-right .dish-ingredients>div:first-child {
-    margin-top: 0.4em;
-    margin-bottom: 1em;
+    margin: 0.5em 0;
+}
+
+.dish-ingredients .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .dish-ingredients .ingredient {
     display: flex;
-    margin: 0.4em 0.1em;
+    margin: 0.5em 1em 0.5em 0.1em;
 }
 
 .dish-details-right .dish-ingredients .fa-circle {
@@ -209,7 +215,6 @@
     color: #313030;
     font-size: 13px;
     font-weight: 500;
-    margin-top: 2em;
 }
 
 .details-container .data-box-container {
@@ -221,10 +226,14 @@
 
 .details-container .data-box-container>div:first-child {
     margin-bottom: 0.75em;
+    width: auto;
+    height: auto;
 }
 
 .details-container .data-box-container>div:nth-child(2) {
     margin-top: 0.75em;
+    width: auto;
+    height: auto;
 }
 
 .dataBox .round {

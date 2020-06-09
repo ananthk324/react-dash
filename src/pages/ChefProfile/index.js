@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import profileImage from '../../assets/icons/user2.png';
 import dish1 from '../../assets/icons/dish1.png';
 import dish2 from '../../assets/icons/dish2.png';
@@ -6,22 +6,40 @@ import dish3 from '../../assets/icons/dish3.png';
 import dish4 from '../../assets/icons/dish4.png';
 import dish5 from '../../assets/icons/dish5.png';
 import './chefProfile.css';
-import '../../components/Table/'
 import ChefAbout from '../../components/ChefAbout';
 import DataBox from '../../components/DataBox';
 import Menu from '../../components/Menu';
-import Table from '../../components/Table';
+import TableSortable from '../../components/TableSortable';
 import Images from '../../assets/icons';
 import { Link } from 'react-router-dom';
 
 const ChefProfile = () => {
+
+    const [personalDetails, setPersonalDetails] = useState({
+        profilepicture: profileImage,
+        name: "Frederick Simmons",
+        id: "@fredrick",
+        joinedOn: "Joined on 02 January 2020",
+        phoneNo: "620-121-8407",
+        mail: "kimmy.mclimorie@gmail.com",
+        location: "438 Colin Apt. 804",
+        tag: "Pizzeria, Dessert, Curry, Sandwiches, Italian, Cafe, Continental",
+        tagLine: "No rules. Don't be afraid to do whatever you want. Cooking doesn't have to have rules. I don't like it that way.",
+        blockedStatus: false
+    })
+    
+    function updatePersonalDetails(){
+        const details = {...personalDetails}
+        details.blockedStatus = !details.blockedStatus
+        setPersonalDetails(details)
+    }
 
     return (
         <div>
             <div className="chefProfile">
 
                 <div className="chefAbout">
-                    <ChefAbout personalDetails={personalDetails}></ChefAbout>
+                    <ChefAbout personalDetails={personalDetails} updatePersonalDetails = {updatePersonalDetails}></ChefAbout>
                 </div>
                 <div>
                     <div style={{ display: "flex", margin: "20px", marginTop: "93px" }}>
@@ -55,7 +73,7 @@ const ChefProfile = () => {
                     </button>
                 </div>
                 <div className="chefTable">
-                    <Table columns={columns} data={data}></Table>
+                    <TableSortable columns={columns} data={data}></TableSortable>
                 </div>
             </div>
         </div>
@@ -64,17 +82,6 @@ const ChefProfile = () => {
 
 export default ChefProfile;
 
-const personalDetails = {
-    profilepicture: profileImage,
-    name: "Frederick Simmons",
-    id: "@fredrick",
-    joinedOn: "Joined on 02 January 2020",
-    phoneNo: "620-121-8407",
-    mail: "kimmy.mclimorie@gmail.com",
-    location: "438 Colin Apt. 804",
-    tag: "Pizzeria, Dessert, Curry, Sandwiches, Italian, Cafe, Continental",
-    tagLine: "No rules. Don't be afraid to do whatever you want. Cooking doesn't have to have rules. I don't like it that way."
-}
 
 
 const menuCount = {
@@ -148,15 +155,15 @@ const dishes = [{
 
 const columns = [
     {
-        Header: 'FOODIE',
-        accessor: 'foodie',
+        Header: <div>FOODIE<i className="fa fa-sort"></i></div>,
+        accessor: 'foodie.name',
         Cell: row => {
             return (
                 <div className="cell-container">
-                    <img className="cell-data-image" src={row.value.image} />
+                    <img className="cell-data-image" src={row.row.original.foodie.image} />
                     <div>
-                        <span className="cell-data-name">{row.value.name}</span>
-                        <span className="cell-data-username">{row.value.username}</span>
+                        <span className="cell-data-name">{row.row.original.foodie.name}</span>
+                        <span className="cell-data-username">{row.row.original.foodie.username}</span>
                     </div>
                 </div>
             )
@@ -171,15 +178,16 @@ const columns = [
                     <span className="cell-data-dish">{row.value.dish}</span>
                 </div>
             )
-        }
+        },
+        disableSortBy: true
     }, {
-        Header: 'PLACED DATE',
+        Header: <div>PLACED DATE<i className="fa fa-sort"></i></div>,
         accessor: 'placed_date'
     }, {
-        Header: 'DELIVERY DATE',
+        Header: <div>DELIVERY DATE<i className="fa fa-sort"></i></div>,
         accessor: 'delivery_date'
     }, {
-        Header: 'AMOUNT',
+        Header: <div>AMOUNT<i className="fa fa-sort"></i></div>,
         accessor: 'amount'
     }
 

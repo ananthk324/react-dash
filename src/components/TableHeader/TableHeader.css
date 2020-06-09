@@ -1,0 +1,58 @@
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 1em 0.1em 1.1em 0.1em;
+    margin: 0.5em;
+    border-bottom: 0.6px solid #dfdbdb;
+}
+
+.table-header>div {
+    margin: auto;
+    padding: 0.5em;
+}
+
+.table-header .table-header-title {
+    flex: 3.5;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: #0E5C50;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.table-header .table-header-title a {
+    text-decoration: none;
+    color: #0E5C50;
+}
+
+.table-header .table-header-title>div {
+    color: #0E5C50;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.table-header .dropdown-bars {
+    margin-left: 1em;
+}
+
+.table-header .dropdown-bars:hover {
+    cursor: pointer;
+}
+
+.table-header .table-header-title .fa {
+    color: #0E5C50;
+    font-size: 4px;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.table-header .dropdown-bars img {
+    width: 18px;
+    height: 16px;
+}

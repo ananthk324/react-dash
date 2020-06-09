@@ -60,23 +60,9 @@ export default function DoughnutChart() {
                 width={200} height={240}
                 options={{
                     tooltips: {
-                        callbacks: {
-                          label: function(tooltipItem, data) {
-                            //get the concerned dataset
-                            var dataset = data.datasets[tooltipItem.datasetIndex];
-                            //calculate the total of this data set
-                            var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
-                              return previousValue + currentValue;
-                            });
-                            console.log("total");
-                            //get the current items value
-                            var currentValue = dataset.data[tooltipItem.index];
-                            //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
-                            var percentage = Math.floor(((currentValue/total) * 100)+0.5);
-                      
-                            return percentage + "%";
-                          }
-                        }
+                        backgroundColor: '#f7f7f7',
+                        bodyFontColor:'#000000',
+                        cornerRadius: 4,
                       } ,
                     cutoutPercentage: 70,
                     responsive: true,
@@ -89,8 +75,7 @@ export default function DoughnutChart() {
                             fontSize: 15,
                             padding: 10,
                             fontColor: 'black',
-                            fontFamily: 'Quicksand',
-                            fontColor: 'black'
+                            fontFamily: 'Quicksand'
                         }
                     },
                     elements: {

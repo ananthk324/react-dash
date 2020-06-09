@@ -68,8 +68,11 @@ const ViewDish = () => {
 const ingredient = [{ing: "Wheat Flour", allerg: false},
                     {ing: "Mozarella Cheese", allerg: false},
                     {ing: "Sugar", allerg: false},
-                    {ing: "Yeast", allerg: false},
+                    {ing: "Natural Yeast", allerg: false},
                     {ing: "Tomato", allerg: false},
+                    {ing: "Virgin Oil", allerg: false},
+                    {ing: "Margarine", allerg: true},
+                    {ing: "Basil Leaves", allerg: false},
                     {ing: "Pine Nuts", allerg: true}];
 
 export default ViewDish;

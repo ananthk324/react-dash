@@ -3,7 +3,7 @@ import './ManageMenus.css';
 import HeaderWithFilter from '../../components/Header/HeaderWithFilter';
 import TableSortable from '../../components/TableSortable';
 import data from '../../constants/ordersSampleData';
-import columns from '../../constants/columnManageMenus';
+import columns from './columnsForManageMenus';
 
 const ManageMenus = () => {
     return (
